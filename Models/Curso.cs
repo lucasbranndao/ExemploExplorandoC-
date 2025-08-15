@@ -33,7 +33,8 @@ namespace ExemploExplorando.Models
             Console.WriteLine($"Alunos do curso de {Nome}");
             for (int count = 0; count < Alunos.Count; count++)
             {
-                string texto = "Nº " + count + " - " + Alunos[count].NomeCompleto;
+                // string texto = "Nº " + count + " - " + Alunos[count].NomeCompleto;
+                string texto = $"Nº {count} - {Alunos[count].NomeCompleto}";
 
                 Console.WriteLine(texto);
             }
