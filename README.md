@@ -10,5 +10,6 @@ as minhas habilidades adquiridas durante o periodo.
   - Array e Listas
   - Concatenando Strings
   - Interpolação de Strings
+  - Manipulação de Valores
 
   
