@@ -8,5 +8,6 @@ as minhas habilidades adquiridas durante o periodo.
   - Estrutura de repetição
   - Organização de um programa
   - Array e Listas
+  - Concatenando Strings
 
   
