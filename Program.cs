@@ -2,21 +2,51 @@
 using ExemploExplorando.Models;
 using System.Globalization;
 using System.Transactions;
+using System.Data;
 
-CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
+string dataString = "11/13/2024 18:00";
+bool sucesso = DateTime.TryParseExact(dataString, "dd/MM/yyyy HH:mm", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime data);
 
-decimal valorMonetario = 1582.40M;
-Console.WriteLine($"Em dolar {valorMonetario.ToString("C", CultureInfo.CreateSpecificCulture("en-US"))}");
+if (sucesso)
+{
+    Console.WriteLine($"Conversão com sucesso! Data: {data}");
+}
+else
+{
+    Console.WriteLine($"{dataString} não é uma data valida!");
+}
 
-Console.WriteLine($"Em reais {valorMonetario:C}");
 
-Console.WriteLine($"Formatação personalizada: {valorMonetario.ToString("C2")}");
+Console.WriteLine(data.ToString("dd/MM/yyyy HH:mm"));
+Console.WriteLine(data.ToShortDateString());
+Console.WriteLine(data.ToShortTimeString());
 
-double porcentagem = .3421;
-Console.WriteLine($"Porcentagem {porcentagem.ToString("P")}");
 
-int numero = 123456;
-Console.WriteLine($"Numeração personalizada {numero.ToString("##-##-##")}");
+Console.WriteLine(data.ToShortTimeString());
+Console.WriteLine(data);
+
+
+
+
+
+
+
+
+
+// CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR");
+
+// decimal valorMonetario = 1582.40M;
+// Console.WriteLine($"Em dolar {valorMonetario.ToString("C", CultureInfo.CreateSpecificCulture("en-US"))}");
+
+// Console.WriteLine($"Em reais {valorMonetario:C}");
+
+// Console.WriteLine($"Formatação personalizada: {valorMonetario.ToString("C2")}");
+
+// double porcentagem = .3421;
+// Console.WriteLine($"Porcentagem {porcentagem.ToString("P")}");
+
+// int numero = 123456;
+// Console.WriteLine($"Numeração personalizada {numero.ToString("##-##-##")}");
 
 
 
