@@ -1,0 +1,4 @@
+linha 1 do arquivo de texto
+linha 2 do arquivo de texto
+linha 3 do arquivo de texto
+linha 4 do arquivo de texto
