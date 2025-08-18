@@ -13,4 +13,5 @@ as minhas habilidades adquiridas durante o periodo.
   - Interpolação de Strings
   - Manipulação de Valores
   - Exeções: Trantando erros
+  - Filas(FIFO)
   
