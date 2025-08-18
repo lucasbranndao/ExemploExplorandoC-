@@ -5,25 +5,70 @@ using System.Transactions;
 using System.Data;
 
 
-Queue<int> fila = new Queue<int>();
+Stack<int> pilha = new Stack<int>();
 
-fila.Enqueue(2);
-fila.Enqueue(4);
-fila.Enqueue(6);
-fila.Enqueue(8);
+pilha.Push(4);
+pilha.Push(6);
+pilha.Push(8);
+pilha.Push(10);
 
-foreach (int item in fila)
+
+foreach (int item in pilha)
+{
+    Console.WriteLine(item);
+}
+Console.WriteLine($"Rewmovendo o elemento do topo: {pilha.Pop()}");
+pilha.Push(20);
+
+foreach (int item in pilha)
 {
     Console.WriteLine(item);
 }
 
-Console.WriteLine($"Rewmovendo o elemento: {fila.Dequeue()}");
-fila.Enqueue(10);
 
-foreach (int item in fila)
-{
-    Console.WriteLine(item);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Queue<int> fila = new Queue<int>();
+
+// fila.Enqueue(2);
+// fila.Enqueue(4);
+// fila.Enqueue(6);
+// fila.Enqueue(8);
+
+// foreach (int item in fila)
+// {
+//     Console.WriteLine(item);
+// }
+
+// Console.WriteLine($"Rewmovendo o elemento: {fila.Dequeue()}");
+// fila.Enqueue(10);
+
+// foreach (int item in fila)
+// {
+//     Console.WriteLine(item);
+// }
 
 
 

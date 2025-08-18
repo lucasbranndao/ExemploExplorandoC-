@@ -14,4 +14,4 @@ as minhas habilidades adquiridas durante o periodo.
   - Manipulação de Valores
   - Exeções: Trantando erros
   - Filas(FIFO)
-  
+  - Pilhas(LIFO)
