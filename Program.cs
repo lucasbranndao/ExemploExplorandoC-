@@ -5,10 +5,12 @@ using System.Transactions;
 using System.Data;
 using Newtonsoft.Json;
 
+DateTime dataAtual = DateTime.Now;
+
 List<Venda> listaVendas = new List<Venda>();
 
-Venda v1 = new Venda(1, "Material de escritorio", 23.00M);
-Venda v2 = new Venda(1, "Licença de software", 110.00M);
+Venda v1 = new Venda(1, "Material de escritorio", 23.00M, dataAtual);
+Venda v2 = new Venda(1, "Licença de software", 110.00M, dataAtual);
 
 listaVendas.Add(v1);
 listaVendas.Add(v2);
