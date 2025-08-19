@@ -4,14 +4,55 @@ using System.Globalization;
 using System.Transactions;
 using System.Data;
 
-Dictionary<string, string> estados = new Dictionary<string, string>();
 
-estados.Add("GO", "Goias");
-estados.Add("SP", "São Pualo");
-estados.Add("BA", "Bahia");
-estados.Add("MG", "Minas Gerais");
+// forma recomenada 
+(int, string, string, decimal) tupla = (1, "Lucas", "Brandão", 1.80M);
 
-Console.WriteLine(estados["BA"]);
+
+ValueTuple<int, string, string, decimal> outroExemploTupla = (1, "Lucas", "Brandão", 1.80M);
+var outroExemploTuplaCreate = Tuple.Create(1, "Lucas", "Brandão", 1.80M);
+
+
+Console.WriteLine($"Id: {tupla.Item1}");
+Console.WriteLine($"Nome: {tupla.Item2}");
+Console.WriteLine($"Sobrenome: {tupla.Item3}");
+Console.WriteLine($"Altura: {tupla.Item4}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Dictionary<string, string> estados = new Dictionary<string, string>();
+
+// estados.Add("GO", "Goias");
+// estados.Add("SP", "São Pualo");
+// estados.Add("BA", "Bahia");
+// estados.Add("MG", "Minas Gerais");
+
+// Console.WriteLine(estados["BA"]);
 
 // // foreach (KeyValuePair<string, string> item in estados)
 // // {
