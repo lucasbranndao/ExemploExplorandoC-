@@ -5,24 +5,14 @@ using System.Transactions;
 using System.Data;
 
 
-LeituraArquivo arquivo = new LeituraArquivo();
 
 
-var (sucesso, linhasArquivo, _) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
 
-if (sucesso)
-{
-    // Console.WriteLine("Quantidade linhas do arquivo::" + quantidadeLinhas);
-    foreach (string linha in linhasArquivo)
-    {
-        Console.WriteLine(linha);
-    }
+Pessoa p1 = new Pessoa("Lucas", "Brandão");
 
-}
-else
-{
-    Console.WriteLine("Não foi possível ler o arquivo");
-}
+(string nome, string sobrenome) = p1;
+
+Console.WriteLine($"{nome} {sobrenome}");
 
 
 
@@ -39,6 +29,39 @@ else
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// LeituraArquivo arquivo = new LeituraArquivo();
+
+
+// var (sucesso, linhasArquivo, _) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+
+// if (sucesso)
+// {
+//     // Console.WriteLine("Quantidade linhas do arquivo::" + quantidadeLinhas);
+//     foreach (string linha in linhasArquivo)
+//     {
+//         Console.WriteLine(linha);
+//     }
+
+// }
+// else
+// {
+//     Console.WriteLine("Não foi possível ler o arquivo");
+// }
 
 // forma recomenada 
 // (int, string, string, decimal) tupla = (1, "Lucas", "Brandão", 1.80M);
