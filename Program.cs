@@ -5,18 +5,53 @@ using System.Transactions;
 using System.Data;
 
 
+LeituraArquivo arquivo = new LeituraArquivo();
+
+
+var (sucesso, linhasArquivo, quantidadeLinhas) = arquivo.LerArquivo("Arquivos/arquivoLeitura.txt");
+
+if (sucesso)
+{
+    Console.WriteLine("Quantidade linhas do arquivo:" + quantidadeLinhas);
+    foreach (string linha in linhasArquivo)
+    {
+        Console.WriteLine(linha);
+    }
+
+}
+else
+{
+    Console.WriteLine("Não foi possível ler o arquivo");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // forma recomenada 
-(int, string, string, decimal) tupla = (1, "Lucas", "Brandão", 1.80M);
+// (int, string, string, decimal) tupla = (1, "Lucas", "Brandão", 1.80M);
 
 
-ValueTuple<int, string, string, decimal> outroExemploTupla = (1, "Lucas", "Brandão", 1.80M);
-var outroExemploTuplaCreate = Tuple.Create(1, "Lucas", "Brandão", 1.80M);
+// ValueTuple<int, string, string, decimal> outroExemploTupla = (1, "Lucas", "Brandão", 1.80M);
+// var outroExemploTuplaCreate = Tuple.Create(1, "Lucas", "Brandão", 1.80M);
 
 
-Console.WriteLine($"Id: {tupla.Item1}");
-Console.WriteLine($"Nome: {tupla.Item2}");
-Console.WriteLine($"Sobrenome: {tupla.Item3}");
-Console.WriteLine($"Altura: {tupla.Item4}");
+// Console.WriteLine($"Id: {tupla.Item1}");
+// Console.WriteLine($"Nome: {tupla.Item2}");
+// Console.WriteLine($"Sobrenome: {tupla.Item3}");
+// Console.WriteLine($"Altura: {tupla.Item4}");
 
 
 

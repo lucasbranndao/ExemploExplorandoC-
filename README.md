@@ -16,3 +16,4 @@ as minhas habilidades adquiridas durante o periodo.
   - Filas(FIFO)
   - Pilhas(LIFO)
   - Dictionary
+  - Tuplas
