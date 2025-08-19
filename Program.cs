@@ -3,23 +3,55 @@ using ExemploExplorando.Models;
 using System.Globalization;
 using System.Transactions;
 using System.Data;
+using Newtonsoft.Json;
 
-int numero = 21;
-bool ehPar = false;
 
-// IF ternário
+Venda v1 = new Venda(1, "Material de escritorio", 23.00M);
 
-ehPar = numero % 2 == 0;
-Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "impar"));
-if (numero % 2 == 0)
+string serializado = JsonConvert.SerializeObject(v1, Formatting.Indented);
 
-{
-    Console.WriteLine($"O número {numero} é par");
-}
-else
-{
-    Console.WriteLine($"O número {numero} é impar");
-}
+Console.WriteLine(serializado);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// int numero = 21;
+// bool ehPar = false;
+
+// // IF ternário
+
+// ehPar = numero % 2 == 0;
+// Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "impar"));
+// if (numero % 2 == 0)
+
+// {
+//     Console.WriteLine($"O número {numero} é par");
+// }
+// else
+// {
+//     Console.WriteLine($"O número {numero} é impar");
+// }
 
 
 
