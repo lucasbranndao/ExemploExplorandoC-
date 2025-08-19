@@ -4,15 +4,46 @@ using System.Globalization;
 using System.Transactions;
 using System.Data;
 
+int numero = 21;
+bool ehPar = false;
+
+// IF ternário
+
+ehPar = numero % 2 == 0;
+Console.WriteLine($"O número {numero} é " + (ehPar ? "par" : "impar"));
+if (numero % 2 == 0)
+
+{
+    Console.WriteLine($"O número {numero} é par");
+}
+else
+{
+    Console.WriteLine($"O número {numero} é impar");
+}
 
 
 
 
-Pessoa p1 = new Pessoa("Lucas", "Brandão");
 
-(string nome, string sobrenome) = p1;
 
-Console.WriteLine($"{nome} {sobrenome}");
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Pessoa p1 = new Pessoa("Lucas", "Brandão");
+
+// (string nome, string sobrenome) = p1;
+
+// Console.WriteLine($"{nome} {sobrenome}");
 
 
 
