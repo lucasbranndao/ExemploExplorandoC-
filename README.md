@@ -15,3 +15,4 @@ as minhas habilidades adquiridas durante o periodo.
   - Exeções: Trantando erros
   - Filas(FIFO)
   - Pilhas(LIFO)
+  - Dictionary

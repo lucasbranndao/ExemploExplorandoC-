@@ -4,26 +4,101 @@ using System.Globalization;
 using System.Transactions;
 using System.Data;
 
+Dictionary<string, string> estados = new Dictionary<string, string>();
 
-Stack<int> pilha = new Stack<int>();
+estados.Add("GO", "Goias");
+estados.Add("SP", "São Pualo");
+estados.Add("BA", "Bahia");
+estados.Add("MG", "Minas Gerais");
 
-pilha.Push(4);
-pilha.Push(6);
-pilha.Push(8);
-pilha.Push(10);
+Console.WriteLine(estados["BA"]);
+
+// // foreach (KeyValuePair<string, string> item in estados)
+// // {
+// //     Console.WriteLine($" Chave: {item.Key}, valor: {item.Value}");
+// // }
+
+// foreach (var item in estados)
+// {
+//     Console.WriteLine($" Chave: {item.Key}, valor: {item.Value}");
+// }
+
+// Console.WriteLine("---------------");
+// estados.Remove("MG");
+// estados["SP"] = "São Paulo - valor alterado";
+
+// foreach (var item in estados)
+// {
+//     Console.WriteLine($" Chave: {item.Key}, valor: {item.Value}");
+// }
+
+// string chave = "Gi";
+// Console.WriteLine("Verificando o elemento");
+
+// if (estados.ContainsKey(chave))
+// {
+//     Console.WriteLine($"Valor existente: {chave}");
+// }
+// else
+// {
+//     Console.WriteLine($"Valor não existe. É seguro adicionar: {chave}");
+// }
 
 
-foreach (int item in pilha)
-{
-    Console.WriteLine(item);
-}
-Console.WriteLine($"Rewmovendo o elemento do topo: {pilha.Pop()}");
-pilha.Push(20);
 
-foreach (int item in pilha)
-{
-    Console.WriteLine(item);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Stack<int> pilha = new Stack<int>();
+
+// pilha.Push(4);
+// pilha.Push(6);
+// pilha.Push(8);
+// pilha.Push(10);
+
+
+// foreach (int item in pilha)
+// {
+//     Console.WriteLine(item);
+// }
+// Console.WriteLine($"Removendo o elemento do topo: {pilha.Pop()}");
+// pilha.Push(20);
+
+// foreach (int item in pilha)
+// {
+//     Console.WriteLine(item);
+// }
 
 
 
@@ -62,7 +137,7 @@ foreach (int item in pilha)
 //     Console.WriteLine(item);
 // }
 
-// Console.WriteLine($"Rewmovendo o elemento: {fila.Dequeue()}");
+// Console.WriteLine($"Removendo o elemento: {fila.Dequeue()}");
 // fila.Enqueue(10);
 
 // foreach (int item in fila)
